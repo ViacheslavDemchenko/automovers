@@ -1,0 +1,22 @@
+.email {
+
+  a {
+    display: block;
+    @include RobotoMedium();
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: var(--black_1);
+    will-change: color;
+    transition: color 0.3s ease-in-out;
+
+    @media (min-width: 1200px) {
+      @include RobotoRegular();
+      color: var(--white_1);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--yellow_1);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// Переменные
+@import "./../scss/global/variables";
+
+// Миксины
+@import "./../scss/global/mixins";
+
+// Сброс дефолтных стилей браузера (дополнительный)
+@import "./../scss/global/global";
+
+// Основные стили
+@import "./../scss/global/base";
+
+// Размеры шрифтов повторяющихся элементов (h1, заголовки секций и т.д.)
+@import "./../scss/global/typography";
+
+// Общие стили для кнопок
+@import "./../scss/global/btns";
+
+// Общие стили для инпутов, чекбоксов и т.д.
+@import "./../scss/global/inputs";
+
+// Общие стили для секций (паддинги и т.д.)
+@import "./../scss/global/sections";
+
+// Плагины
+@import "./../scss/libs/swiper-bundle.min"; // Слайдер
+
+// Хедер
+@import "./../components/sections/header/_header";
+
+// Футер
+@import "./../components/sections/footer/footer";
+
+// БЭМ-блоки
+// @import "./../components/bem-blocks/accordion/accordion"; // Аккордион
+@import "./../components/bem-blocks/burger/_burger"; // Бургер
+@import "./../components/bem-blocks/logo/_logo"; // Логотип
+@import "./../components/bem-blocks/nav/_nav"; // Меню
+@import "./../components/bem-blocks/socials/_socials"; // Соцсети
+@import "./../components/bem-blocks/email/_email";
+@import "./../components/bem-blocks/phone/_phone";
+
+// Секции
+@import "./../components/sections/main/_main"; // Первая секция

@@ -1,0 +1,21 @@
+.btn {
+  @include RobotoRegular();
+  font-size: 1.4rem;
+  line-height: 130%;
+  color: var(--black_1);
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(0deg, #F96E09 0%, #F1AF19 38.02%, #EFBC1C 45.31%, #ECD823 61.46%);
+  will-change: box-shadow;
+  transition: box-shadow 0.3 ease-in-out;
+
+  @media (min-width: 1440px) {
+    font-size: 1.6rem;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0rem 2.4rem 1.4rem rgba(236, 119, 35, 0.3);
+  }
+}
