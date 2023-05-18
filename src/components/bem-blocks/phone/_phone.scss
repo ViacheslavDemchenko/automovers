@@ -7,7 +7,7 @@
 
   a {
     display: block;
-    @include RobotoMedium();
+    @include OpenSansMedium();
     font-size: 1.6rem;
     line-height: 130%;
     color: var(--black_1);
@@ -15,7 +15,7 @@
     transition: color 0.3s ease-in-out;
 
     @media (min-width: 1200px) {
-      @include RobotoRegular();
+      // @include RobotoRegular();
       color: var(--white_1);
     }
 

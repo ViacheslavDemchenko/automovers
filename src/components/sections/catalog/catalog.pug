@@ -1,0 +1,45 @@
+section.catalog
+  .container 
+    h2 #[span.yellow Каталог] автомобилей
+    p.catalog__subtitle Лучший ассортимент и цены
+    .catalog__inner
+      .catalog__filter 
+        h3 Марки авто
+        ul.catalog__brands
+          li.catalog__brand
+            a(href="#!").catalog__brand-link Toyota
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Honda
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Nissan
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link BMW
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Audi
+          li.catalog__brand
+            a(href="#!").catalog__brand-link.catalog__brand-link--active Mercedes
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Lexus
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Ford
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Ferrari
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Lamborghini
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Porsche
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Land Rover
+          li.catalog__brand 
+            a(href="#!").catalog__brand-link Chevrolet 
+      .catalog__cards-wrap
+        p.catalog__current-brend Mercedes (15)
+        .catalog__cards
+          include ./../../bem-blocks/card/card.pug
+          include ./../../bem-blocks/card/card.pug
+          include ./../../bem-blocks/card/card.pug
+          include ./../../bem-blocks/card/card.pug
+          include ./../../bem-blocks/card/card.pug
+          include ./../../bem-blocks/card/card.pug
+          include ./../../bem-blocks/card/card.pug
+          include ./../../bem-blocks/card/card.pug

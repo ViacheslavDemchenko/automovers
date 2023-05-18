@@ -67,7 +67,7 @@
       // max-width: 60rem;
       text-align: center;
       margin-bottom: 6rem;
-      @include RobotoMedium();
+      @include OpenSansMedium();
       font-size: 1.6rem;
       line-height: 130%;
       color: var(--white_1);
@@ -87,7 +87,7 @@
       li {
         position: relative;
         margin-bottom: 1rem;
-        @include RobotoRegular();
+        @include OpenSansRegular();
         font-size: 1.4rem;
         line-height: 130%;
         color: var(--white_1);

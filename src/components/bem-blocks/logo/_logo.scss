@@ -46,7 +46,7 @@
   
       &:nth-of-type(2) {
         text-align: center;
-        @include RobotoMedium();
+        @include OpenSansMedium();
         font-size: 1.2rem;
         line-height: 130%;
         color: var(--white_1);

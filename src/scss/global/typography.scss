@@ -1,0 +1,21 @@
+h2 {
+  @include RobotoBold();
+  font-size: 3.5rem;
+  line-height: 130%;
+
+  @media (min-width: 1024px) {
+    font-size: 4.5rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 6rem;
+  }
+}
+
+.yellow {
+  // color: var(--yellow_1);
+  background-image: linear-gradient(0deg, #F96E09 0%, #ECD823 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
