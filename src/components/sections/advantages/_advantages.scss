@@ -38,8 +38,12 @@
   p {
     text-align: center;
     @include OpenSansMedium();
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 130%;
+
+    @media (min-width: 1024px) {
+      font-size: 2rem;
+    }
   }
 
   &__inner {

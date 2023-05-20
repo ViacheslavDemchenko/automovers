@@ -33,8 +33,12 @@
 
   &__subtitle {
     @include OpenSansMedium();
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 130%;
+
+    @media (min-width: 1024px) {
+      font-size: 2rem;
+    }
   }
 
   &__inner {
@@ -65,7 +69,7 @@
     align-items: center;
     padding: 2rem 0;
     margin-bottom: 3rem;
-    border: 0.1rem solid var(--yellow_1);
+    border: 0.2rem solid var(--yellow_1);
     border-radius: 0.5rem;
 
     @media (min-width: 1024px) {

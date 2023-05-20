@@ -351,16 +351,18 @@ if (window && window.NodeList && !NodeList.prototype.forEach) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/mobileMenu */ "./src/js/modules/mobileMenu.js");
-/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
+/* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
 __webpack_require__(/*! polyfill-nodelist-foreach */ "./node_modules/polyfill-nodelist-foreach/index.js"); // Полифил для поддержки метода forEach в IE11+ и Safari9
 __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // Полифил для поддержки IE11+ и старыми браузерами использования SVG через use 
 
 // import accordion from './modules/accordion.js'; // Аккордион
  // Мобильное меню
 // import modal from './modules/modal'; // Модалки
+// import slider from './modules/slider'; // Слайдер
  // Слайдер
 
 // accordion();
+Object(_modules_sliderReviews__WEBPACK_IMPORTED_MODULE_1__["default"])();
 Object(_modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__["default"])();
 // modal();
 // slider();
@@ -4793,27 +4795,32 @@ function mobileMenu() {
 
 /***/ }),
 
-/***/ "./src/js/modules/slider.js":
-/*!**********************************!*\
-  !*** ./src/js/modules/slider.js ***!
-  \**********************************/
+/***/ "./src/js/modules/sliderReviews.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/sliderReviews.js ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return slider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return sliderReviews; });
 /* harmony import */ var _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../libs/swiper-bundle.min.js */ "./src/js/libs/swiper-bundle.min.js");
 /* harmony import */ var _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__);
  // Слайдер
 
-function slider() {
-  if (document.querySelector('.mainSwiper')) {
-    var mainSwiper = new _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default.a('.mainSwiper', {
+function sliderReviews() {
+  if (document.querySelector('.sliderReviews')) {
+    var _sliderReviews = new _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default.a('.sliderReviews', {
       slidesPerView: 1,
       loopedSlides: 1,
-      // autoHeight: true,
-      loop: true
+      autoHeight: true,
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.arrow__left',
+        prevEl: '.arrow__right'
+      }
     });
   }
 }

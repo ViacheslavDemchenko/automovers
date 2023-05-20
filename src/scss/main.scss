@@ -29,7 +29,7 @@
 @import "./../components/sections/header/_header";
 
 // Футер
-@import "./../components/sections/footer/footer";
+@import "./../components/sections/footer/_footer";
 
 // БЭМ-блоки
 // @import "./../components/bem-blocks/accordion/accordion"; // Аккордион
@@ -45,3 +45,5 @@
 @import "./../components/sections/main/_main"; // Первая секция
 @import "./../components/sections/advantages/_advantages"; // Секция преимущества
 @import "./../components/sections/catalog/_catalog"; // Секция каталог
+@import "./../components/sections/about/_about"; // Секция О нас
+@import "./../components/sections/reviews/_reviews"; // Секция Отзывы

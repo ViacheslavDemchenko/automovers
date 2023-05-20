@@ -1,0 +1,146 @@
+.footer {
+  position: relative;
+  padding: 5rem 0 5rem 0;
+  background: url("../img/footer-bg.jpg") 100% 55%/cover no-repeat;
+
+  @media (min-width: 1024px) {
+    padding: 6rem 0 8rem 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 7.5rem 0 10rem 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000, 0.8);
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .copywrite {
+    position: relative;
+    z-index: 10;
+    margin-top: 5rem;
+    @include OpenSansMedium();
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--white_1);
+    opacity: 0.5;
+
+    @media (min-width: 1200px) {
+      margin-top: 10rem;
+    }
+  }
+
+  .logo {
+    width: 24rem;
+    margin: 0 auto 3rem auto;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1024px) {
+      margin: 0;
+      width: 26rem;
+    }
+
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  .header__contacts {
+    margin: 3rem auto 0 auto;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+    }
+
+    .phone,
+    .email {
+
+      a {
+        color: var(--white_1);
+      }
+    }
+
+    .phone {
+      @media (min-width: 768px) {
+        margin: 3rem 0 2rem 0;
+      }
+    }
+  }
+
+  .header__inner-wrap {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    overflow: auto;
+    background: none;
+    will-change: unset;
+    transition: none;
+    align-items: initial;
+
+    .socials {
+      width: 11rem;
+      margin: 2rem auto 0 auto; 
+    }
+
+  }
+
+  .nav .menu {
+    width: auto;
+
+    @media (min-width: 768px) {
+      max-width: 36rem;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    .menu-item {
+      margin: 0;
+
+      a {
+        color: var(--white_1);
+      }
+
+      &:not(:last-of-type) {
+
+        @media (min-width: 1024px) {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
+
