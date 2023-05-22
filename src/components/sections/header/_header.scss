@@ -10,6 +10,11 @@
     padding: 3rem 0;
   }
 
+  &-inner {
+    position: static;
+    background: var(--black_1);
+  }
+
   &__inner {
     width: 100%;
     display: flex;

@@ -38,7 +38,7 @@
     }
   }
 
-  .copywrite {
+  .copyright {
     position: relative;
     z-index: 10;
     margin-top: 5rem;
@@ -55,21 +55,30 @@
   }
 
   .logo {
-    width: 24rem;
+    width: 25rem;
     margin: 0 auto 3rem auto;
 
     @media (min-width: 768px) {
       margin: 0 auto;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       margin: 0;
-      width: 26rem;
+      width: 32rem;
+    }
+
+    @media (min-width: 1440px) {
+      width: 40rem;
     }
 
     img {
-      width: 7rem;
-      height: 7rem;
+      width: 8rem;
+      height: 4rem;
+  
+      @media (min-width: 1440px) {
+        width: 10rem;
+        height: 5rem;  
+      }
     }
   }
 

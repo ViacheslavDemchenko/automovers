@@ -352,6 +352,7 @@ if (window && window.NodeList && !NodeList.prototype.forEach) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/mobileMenu */ "./src/js/modules/mobileMenu.js");
 /* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
+/* harmony import */ var _modules_smoothScroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/smoothScroll */ "./src/js/modules/smoothScroll.js");
 __webpack_require__(/*! polyfill-nodelist-foreach */ "./node_modules/polyfill-nodelist-foreach/index.js"); // Полифил для поддержки метода forEach в IE11+ и Safari9
 __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // Полифил для поддержки IE11+ и старыми браузерами использования SVG через use 
 
@@ -361,9 +362,11 @@ __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // По
 // import slider from './modules/slider'; // Слайдер
  // Слайдер
 
+
 // accordion();
 Object(_modules_sliderReviews__WEBPACK_IMPORTED_MODULE_1__["default"])();
 Object(_modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__["default"])();
+Object(_modules_smoothScroll__WEBPACK_IMPORTED_MODULE_2__["default"])();
 // modal();
 // slider();
 
@@ -4823,6 +4826,43 @@ function sliderReviews() {
       }
     });
   }
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/smoothScroll.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/smoothScroll.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return smoothScroll; });
+function smoothScroll() {
+  // Найти все якорные ссылки на странице
+  var anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+  // Обработчик события клика для каждой якорной ссылки
+  anchorLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault(); // Отменить стандартное действие перехода по ссылке
+
+      // Получить целевой элемент, на который указывает якорная ссылка
+      var target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        // Вычислить расстояние до целевого элемента от верхней части страницы
+        var offsetTop = target.offsetTop;
+
+        // Плавно прокрутить страницу к целевому элементу
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
 }
 
 /***/ })

@@ -40,6 +40,7 @@
 @import "./../components/bem-blocks/email/_email";
 @import "./../components/bem-blocks/phone/_phone";
 @import "./../components/bem-blocks/card/_card";
+@import "./../components/bem-blocks/breadcrumbs/_breadcrumbs";
 
 // Секции
 @import "./../components/sections/main/_main"; // Первая секция
@@ -47,3 +48,4 @@
 @import "./../components/sections/catalog/_catalog"; // Секция каталог
 @import "./../components/sections/about/_about"; // Секция О нас
 @import "./../components/sections/reviews/_reviews"; // Секция Отзывы
+@import "./../components/sections/single/_single"; // Страница автомобиля (карточка)

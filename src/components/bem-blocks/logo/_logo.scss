@@ -1,26 +1,28 @@
 .logo {
-  width: 19rem;
+  width: 25rem;
   display: flex;
   align-items: center;
   // margin-right: 3rem;
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin-right: auto;
 
   @media (min-width: 1200px) {
-    width: 23rem;
-    margin-right: 5rem;
+    width: 32rem;
+    margin-right: 3rem;
   }
 
   @media (min-width: 1440px) {
-    width: 32rem;
+    width: 40rem;
+    margin-right: 1rem;
   }
 
   img {
-    width: 5rem;
-    height: 5rem;
+    width: 8rem;
+    height: 4rem;
 
     @media (min-width: 1440px) {
-      width: 8rem;
-      height: 8rem;
+      width: 10rem;
+      height: 5rem;  
     }
   }
 

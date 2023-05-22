@@ -6,9 +6,11 @@ import mobileMenu from './modules/mobileMenu'; // Мобильное меню
 // import modal from './modules/modal'; // Модалки
 // import slider from './modules/slider'; // Слайдер
 import sliderReviews from './modules/sliderReviews'; // Слайдер
+import smoothScroll from './modules/smoothScroll'; 
 
 // accordion();
 sliderReviews();
 mobileMenu();
+smoothScroll();
 // modal();
 // slider();

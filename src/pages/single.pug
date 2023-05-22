@@ -1,0 +1,12 @@
+extends ./../layouts/main
+
+block variables
+  - let pageTitle = 'Модель автомобиля';
+
+block content
+  .wrap-feedback
+  .wrapper
+    include ./../components/sections/header/header-inner.pug
+    main
+      include  ./../components/sections/single/single.pug
+    include ./../components/sections/footer/footer.pug
